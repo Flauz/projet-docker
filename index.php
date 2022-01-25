@@ -2,7 +2,6 @@
 
 require_once './db.php';
 
-
 $query = DB::getInstance()->prepare("SELECT * FROM articles");
 $query->execute();
 $result = $query->fetchAll();
